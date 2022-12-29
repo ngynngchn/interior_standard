@@ -84,7 +84,9 @@ article a {
   color: white;
 }
 
-/* =====MAIN===== */
+/* ================
+        MAIN
+================ */
 /* =====Our Story===== */
 
 #our-story {
@@ -150,6 +152,8 @@ h2 {
   background-color: #2e2e2e;
   color: white;
   padding: 15vh 4vw;
+  display: flex;
+  justify-content: space-around;
 }
 
 #contact article {
@@ -163,6 +167,28 @@ h2 {
 #contact article p {
   letter-spacing: 0.1rem;
   margin-block: 3vh;
+}
+
+/* ==FORM== */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+label {
+  font-family: Lora;
+  font-size: 1.3rem;
+}
+
+input {
+  margin-block: 0.5vh 3vh;
+  padding: 0.5vh 0.5vw;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  padding: 0.5vh 1vh;
 }
 
 /* ====FOOTER==== */
