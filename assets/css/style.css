@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
+/* ====== HEADER ======== */
+
+header {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 60vw;
+}
+
+header article {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+header article p {
+  font-family: Lora;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+#our-story p,
+#designs p,
+#contact article p {
+  line-height: 1.7rem;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 1.5rem;
+  text-align: center;
+}
+
+/* ===== NAVBAR ===== */
+
+.nav-bar {
+  background-color: #2e2e2e;
+  padding: 1vh 5vw 1vh 2vw;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a,
+footer p,
+article a {
+  text-decoration: none;
+  color: white;
+}
+
+/* =====MAIN===== */
+/* =====Our Story===== */
+
+#our-story {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#our-story article {
+  padding: 2vw;
+}
+
+#our-story img {
+  height: 65vh;
+}
+
+#our-story p {
+  margin: 3vh;
+  letter-spacing: 0.1rem;
+}
+
+/* ==== FEATURED ==== */
+
+#designs {
+  padding-top: 15vh;
+}
+
+#designs p {
+  width: 35vw;
+  margin: 3vh auto 4vh;
+  font-size: 1.2rem;
+}
+
+.designs-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.designs-gallery img {
+  height: 30vh;
+}
+
+.designs-gallery figcaption {
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.designs-gallery iframe {
+  margin: 5vh;
+}
+
+/* =====CONTACT===== */
+
+#contact {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 15vh 4vw;
+}
+
+#contact article {
+  width: 40vw;
+}
+
+#contact article h2 {
+  text-align: start;
+}
+
+#contact article p {
+  letter-spacing: 0.1rem;
+  margin-block: 3vh;
+}
+
+/* ====FOOTER==== */
+
+footer {
+  background-color: #1d2c2f;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 3vw;
+}
+
+footer p,
+article a {
+  font-family: Lora;
+}
+
+footer article a {
+  margin-left: 2vw;
+}
