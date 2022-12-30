@@ -19,14 +19,16 @@
 
 header {
   background-color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 header img {
   width: 60vw;
+  object-fit: cover;
 }
 
 header article {
@@ -57,6 +59,10 @@ h1 {
   text-align: center;
 }
 
+/* ================
+        MAIN
+================ */
+
 /* ===== NAVBAR ===== */
 
 .nav-bar {
@@ -84,16 +90,12 @@ article a {
   color: white;
 }
 
-/* ================
-        MAIN
-================ */
 /* =====Our Story===== */
 
 #our-story {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #2e2e2e;
   color: white;
 }
@@ -132,6 +134,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 5vh;
 }
 .designs-gallery img {
   height: 30vh;
@@ -150,14 +153,18 @@ h2 {
 
 #contact {
   background-color: #2e2e2e;
+  min-height: 100vh;
   color: white;
   padding: 15vh 4vw;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
 }
 
 #contact article {
   width: 40vw;
+  min-width: 300px;
 }
 
 #contact article h2 {
@@ -173,6 +180,7 @@ h2 {
 #contact form {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
   width: 25vw;
 }
 
@@ -197,6 +205,7 @@ footer {
   background-color: #1d2c2f;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2vh 3vw;
 }
 
@@ -207,4 +216,58 @@ article a {
 
 footer article a {
   margin-left: 2vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  header article {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  header img {
+    width: 100vw;
+  }
+
+  .nav-bar img {
+    width: 10vw;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    margin-left: 3vw;
+  }
+
+  #our-story {
+    flex-direction: column;
+  }
+
+  #our-story p {
+    text-align: center;
+  }
+  #our-story img {
+    width: 100vw;
+    height: initial;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #designs p {
+    width: 100vw;
+    text-align: center;
+  }
+
+  #designs {
+    padding-top: 12vh;
+  }
+
+  .designs-gallery img {
+    height: 40vh;
+  }
+
+  footer p,
+  article a {
+    font-size: 0.6rem;
+  }
 }
